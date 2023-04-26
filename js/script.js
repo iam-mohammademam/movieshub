@@ -120,8 +120,14 @@ figures.forEach((figure) => {
     body.querySelectorAll('section').forEach((section) => {
       section.classList.add('hidden')
     })
-    location.href="#preview";
+   
     preview.classList.add('active');
+    if(e.key=="Back"){
+      body.querySelectorAll('section').forEach((section) => {
+      section.classList.remove('hidden')
+    })
+    preview.classList.remove('active');
+    }
   })
 })
 
