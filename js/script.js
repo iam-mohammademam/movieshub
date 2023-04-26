@@ -120,6 +120,7 @@ figures.forEach((figure) => {
     body.querySelectorAll('section').forEach((section) => {
       section.classList.add('hidden')
     })
+    location.href="#preview";
     preview.classList.add('active');
   })
 })
